@@ -1,10 +1,10 @@
-* {
+*{
     margin: 0%;
     overflow: hidden;
     text-decoration: none;
 }
 
-.cabecalho {
+.cabecalho{
     width: 100%;
     height: 10vh;
     background-color: rgb(88, 86, 86);
@@ -12,11 +12,11 @@
 
 .paginas a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
+    position: absolute;
     font-weight: bolder;
-    font-size: 30px;
-    top: 0vh;
-    left: 0%;
+    font-size: 32px;
+    top: 3vh;
+    left: 3%;
     color: rgb(243, 234, 234);
     padding: 0%;
 }
@@ -25,18 +25,33 @@
     color: rgb(198, 198, 198);
 }
 
-.paginas #inicio {
+
+.paginas #home{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
+    position: absolute;
     font-weight: bolder;
-    font-size: 40px;
-    top: 1vh;
-    left: 42%;
+    font-size: 32px;
+    top: 3vh;
+    left: 47%;
+    color: rgb(243, 234, 234);
     padding: 0%;
-    color: rgb(212, 212, 212);
 }
 
-.paginas #inicio:hover {
+.paginas #home:hover {
+    color: rgb(172, 169, 169);
+}
+
+.paginas #Pesquisar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 32px;
+    top: 3vh;
+    left: 90%;
+    color: rgb(243, 234, 234);
+    padding: 0%;
+}
+.paginas #Pesquisar:hover {
     color: rgb(172, 169, 169);
 }
 
@@ -121,8 +136,8 @@
     font-weight: bolder;
     font-size: 30px;
     display: block;
-    left: 20%;
-    top: 5vh;
+    left: 30%;
+    top: 6vh;
     position: relative;
 
 
@@ -131,17 +146,18 @@
 
 .tabela input {
     color: rgb(0, 0, 0);
-    width: 60%;
-    height: 4vh;
-    top: 5vh;
+    width: 37%;
+    height: 3vh;
+    top: 4vh;
     font: 30px sans-serif;
     display: block;
     position: relative;
-    left: 20%;
+    left: 30%;
     border-radius: 10px;
     bottom: 5px;
     cursor: text;
     padding: 15px;
+    margin-top: 2vh;
 }
 
 .tabela button {
@@ -192,3 +208,14 @@
     color: rgb(172, 169, 169);
 }
 
+
+.tabela #cartoes{
+    display: block;
+    position: relative;
+    width: 10%;
+    height: 5vh;
+    top: -17vh;
+    left: 75%;
+    border: 2px solid black;
+    font-size: 20px;
+}

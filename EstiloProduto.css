@@ -1,10 +1,10 @@
-* {
+*{
     margin: 0%;
     overflow: hidden;
     text-decoration: none;
 }
 
-.cabecalho {
+.cabecalho{
     width: 100%;
     height: 10vh;
     background-color: rgb(88, 86, 86);
@@ -12,11 +12,11 @@
 
 .paginas a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
+    position: absolute;
     font-weight: bolder;
-    font-size: 30px;
-    top: 0vh;
-    left: 0%;
+    font-size: 32px;
+    top: 3vh;
+    left: 3%;
     color: rgb(243, 234, 234);
     padding: 0%;
 }
@@ -25,20 +25,35 @@
     color: rgb(198, 198, 198);
 }
 
-.paginas #inicio {
+.paginas #home{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: relative;
+    position: absolute;
     font-weight: bolder;
-    font-size: 40px;
-    top: 1vh;
-    left: 42%;
+    font-size: 32px;
+    top: 3vh;
+    left: 47%;
+    color: rgb(243, 234, 234);
     padding: 0%;
-    color: rgb(212, 212, 212);
 }
 
-.paginas #inicio:hover {
+.paginas #home:hover {
     color: rgb(172, 169, 169);
 }
+
+.paginas #Pesquisar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    font-weight: bolder;
+    font-size: 32px;
+    top: 3vh;
+    left: 90%;
+    color: rgb(243, 234, 234);
+    padding: 0%;
+}
+.paginas #Pesquisar:hover {
+    color: rgb(172, 169, 169);
+}
+
 
 
 .container {
@@ -83,7 +98,7 @@
     height: 30vh;
     top: 0%;
 }
-.container #botcliente{
+.container #botproduto{
     background-color: rgb(223, 225, 225);
 }
 
@@ -118,42 +133,105 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(0, 0, 0);
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 24px;
     display: block;
-    left: 2%;
-    top: 5vh;
+    left: 19%;
+    top: 3vh;
     position: relative;
-
-
+    margin-top: 2vh;
 
 }
 
 .tabela input {
     color: rgb(0, 0, 0);
-    width: 30%;
-    height: 2vh;
-    top: 5vh;
+    width: 40%;
+    height: 6vh;
+    top: 6vh;
     font: 30px sans-serif;
     display: block;
     position: relative;
-    left: 2%;
+    left: 20%;
     border-radius: 10px;
-    bottom: 5px;
+    bottom: 0px;
     cursor: text;
-    padding: 15px;
+    padding: 5px;
+    margin: -3vh;
+
 }
+
+/*. -------------------FORMULARIO QUANTIDADE-------------------------*/
+
+.tabela #quantidade1{
+    display: block;
+    position: relative;
+    width: 10%;
+    left: 65.5%;
+    font-size: 25px;
+    top: -5vh;
+}
+.tabela #quantidade{
+    display: block;
+    position: absolute;
+    width: 10%;
+    left: 67%;
+    top: 18vh;
+    height: 5vh;
+}
+
+
+
+
+
+/*. -------------------FORMULARIO PORCENTAGEM-------------------------*/
+.tabela #porcentagem1{
+    display: block;
+    position: relative;
+    width: 10%;
+    left: 80%;
+    font-size: 40px;
+    top: -9vh;
+}
+.tabela #porcentagem{
+    display: block;
+    position: absolute;
+    width: 10%;
+    left: 67%;
+    top: 30vh;
+}
+
+
+.tabela #descricao{
+    display: block;
+    position: relative;
+    width: 40%;
+    height: 7vh;
+    left: 20%;
+    top: 12vh;
+}
+
+.tabela #descri{
+    display: block;
+    position:relative;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    top: 8vh;
+
+}
+/*. --------------------------------------------------------------------*/
+
+
 
 .tabela button {
     color: rgb(248, 248, 248);
     background-color: rgb(88, 86, 86);
     width: 20%;
     font-weight: bolder;
-    height: 6vh;
-    top: 10vh;
+    height: 7vh;
+    top: 8vh;
     font: 30px sans-serif;
     display: block;
     position: relative;
-    left: 8%;
+    left: 40%;
     cursor: pointer;
     border-radius: 10px;
     transition: .2s;
@@ -195,3 +273,5 @@
 .paginas #Pesquisar:hover {
     color: rgb(172, 169, 169);
 }
+
+
