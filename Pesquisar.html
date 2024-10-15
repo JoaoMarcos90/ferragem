@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="EstiloPesquisar.css">
 </head>
@@ -14,19 +17,19 @@
         <div class="cabecalho">
             <div class="paginas">
                 <a href="index.html">Sair</a>
-                <a href="Home.html" id="home">INICIO</a> 
+                <a href="Home.html" id="home">INICIO</a>
                 <a href="Pesquisar.html" id="Pesquisar">Pesquisar</a>
             </div>
         </div>
     </header>
     <section>
-        <div class="container">
+        <!--   <div class="container">
             <div class="tabela">
-                <div class="icon1"><i class="fa fa-search"></i></div>
+                 <div class="icon1"><i class="fa fa-search"></i></div>
                 <input class="search-fruits" type="text">
                 <ul class="fruits-list">
                     <li>Materiais<img src="./imagens/img1.png" width="100%" height="50%" alt=""></li>
-                    <li>chuveiro<img src="./imagens/chuveiro.png" width="50%" alt=""></li>
+                    <li>chuveiro<img src="./imagens/chuveiro.png" width="50%" alt="">chuveiro</li>
                     <li>torneira<img src="./imagens/torneira.png" width="50%" alt=""></li>
                     <li>lampada<img src="./imagens/lampada.png" width="50%" alt=""></li>
                 </ul>
@@ -34,7 +37,102 @@
             </div>
           
         </div>
+        
+-->
+
+        <div class="tabela">
+            <div id="container">
+                <div class="input-group">
+                    <div class="input-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input id="search" type="text" class="input-field" placeholder="pesquisar">
+                </div>
+
+                <ul class="items">
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./imagens/img1.png" alt="chuveiro">
+                        </div>
+
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Ferramenta
+                            </h2>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-cart-shopping"></i>
+
+                            </p>
+                            <p class="item-description">
+                                Escolha seu produto
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./imagens/chuveiro.png" alt="chuveiro">
+                        </div>
+
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                chuveiro
+                            </h2>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Chuveiro R$ 50,00
+                            </p>
+                            <p class="item-description">
+                                Melhor chuveiro do mundo
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./imagens/lampada.png" alt="chuveiro">
+                        </div>
+
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                Lampada
+                            </h2>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                Lampada R$ 50,00
+                            </p>
+                            <p class="item-description">
+                                Melhor do mundo
+                            </p>
+                        </div>
+                    </li>
+                    <li class="item">
+                        <div class="item-image">
+                            <img src="./imagens/torneira.png" alt="chuveiro">
+                        </div>
+
+                        <div class="item-content">
+                            <h2 class="item-title">
+                                torneira
+                            </h2>
+                            <p class="item-subtitle">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                torneira R$ 50,00
+                            </p>
+                            <p class="item-description">
+                                Melhor do mundo
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <li id="no_results">
+                    <p>NENHUM RESULTADO</p>
+                </li>
+            </div>
+
+        </div>
     </section>
+
+
 
     <footer>
         <div class="final">

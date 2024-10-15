@@ -9,18 +9,41 @@ function process(quant){
   }
 
 
-  let inputElement = document.querySelector("input")
-let listElement = document.querySelector("ul")
-let itemElement = listElement.querySelectorAll("li")
 
-inputElement.addEventListener("input", (e) => {
-  let inputed = e.target.value.toLowerCase()
-  itemElement.forEach((li) => {
-    let text = li.textContent.toLowerCase()
-    if(text.includes(inputed)){
-      li.style.display = "block"
+
+const searchInput = document.getElementById('search')
+
+searchInput.addEventListener('input',(event) =>{
+  const value = formatString(event.target.value);
+  const items = document.querySelectorAll('.items .item');
+  const noResults = document.getElementById('no_results');
+
+  let hasResults = false;
+
+
+
+  items.forEach(item => {
+    const itemTitle = item.querySelector('.item-title').textContent;
+    if(formatString(item.textContent).indexOf(value) !== -1){
+      item.style.display = 'flex';
+      hasResults= true;
     }else{
-      li.style.display = "none"
+      item.style.display = 'none';
     }
   })
-})
+  if(hasResults){
+    noResults.style.display = 'none';
+  }else{
+    noResults.style.display = 'block';
+  }
+});
+
+function formatString(value){
+  return value
+    .toLowerCase()
+    .trim()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g,'');
+}
+
+
